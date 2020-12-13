@@ -4,15 +4,27 @@
     <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="header">
-      <div class="logo">
-        <div class="logo-ultimate"></div>
-        <p class="logo-name">Ultimate Courses<span>&trade;</span></p>
-      </div>
-    </header>
     <div id="app">
-      <h1>Ultimate RxJS</h1>
+      <h1>RxJS Samples</h1>
+
+      <div class='examples'>
+        <div onClick='mymod.mergeMap()'>mergeMap</div>
+        <div onClick='mymod.flatMap()'>flatMap</div>
+        <div onClick='mymod.concatMap()'>concatMap</div>
+        <div onClick='mymod.switchMap()'>switchMap</div>
+        <div onClick='mymod.exhaustMap()'>exhaustMap</div>
+      </div>
+
+      <div class='examples'>
+        <div id="button1">fromEvent</div>
+      </div>
+
+      <div class='examples'>
+        <div id="button2">mergeMap - BehaviorSubject</div>
+      </div>
+
     </div>
-    <script src="sample.js"></script>
+    <script src="main.js"></script>
+    
   </body>
 </html>
